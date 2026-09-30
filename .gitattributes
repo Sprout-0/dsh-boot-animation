@@ -1,0 +1,15 @@
+# 统一行尾：任何平台、任何安装方式（git clone / codeload tarball）都拿到 LF。
+# 没有这行时，Windows 上 core.autocrlf=true 会把 LF 检出成 CRLF，
+# 于是「从 git 装出来」的副本与仓库内容逐字节不同（差值 = CRLF 行数）。
+* text=auto eol=lf
+
+# 媒体与图片按二进制处理，绝不做行尾转换
+*.mp4 binary
+*.m4v binary
+*.webm binary
+*.mov binary
+*.mkv binary
+*.mp3 binary
+*.wav binary
+*.png binary
+*.gif binary
