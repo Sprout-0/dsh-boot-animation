@@ -11,13 +11,16 @@
   ],
   "license": "BSD-3-Clause",
   "author": "NativeDog1",
+  "contributors": [
+    "Sprout-0"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NativeDog1/dsh-boot-animation.git"
+    "url": "git+https://github.com/Sprout-0/dsh-boot-animation.git"
   },
-  "homepage": "https://github.com/NativeDog1/dsh-boot-animation#readme",
+  "homepage": "https://github.com/Sprout-0/dsh-boot-animation#readme",
   "bugs": {
-    "url": "https://github.com/NativeDog1/dsh-boot-animation/issues"
+    "url": "https://github.com/Sprout-0/dsh-boot-animation/issues"
   },
   "keywords": [
     "dsh",
