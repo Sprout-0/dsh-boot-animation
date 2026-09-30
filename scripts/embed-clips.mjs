@@ -4,11 +4,12 @@ import { join, dirname } from "node:path"
 import { fileURLToPath } from "node:url"
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..")
+// One clip on purpose. The other three were dropped so the intro is always the
+// same film: a picker no longer exists, and carrying 10MB of footage nothing can
+// select is pure startup cost. Source masters for the dropped clips stay in
+// `media/` — adding one back is a line here plus `node scripts/embed-clips.mjs`.
 const CLIPS = [
-  { id: "brand", file: "media/deepseek-brand-intro.mp4", name: "DeepSeek 品牌片头" },
   { id: "cyberpunk", file: "media/deepseek-cyberpunk-intro.mp4", name: "DeepSeek 赛博朋克片头" },
-  { id: "awakening", file: "media/deepseek-awakening-intro.mp4", name: "DeepSeek 数字角色苏醒" },
-  { id: "startup", file: "media/deepseek-startup-intro.mp4", name: "DeepSeek 启动问题" },
 ]
 
 // faststart: moov must sit before mdat, or the browser waits for the whole file.
